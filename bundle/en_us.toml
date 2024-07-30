@@ -1,0 +1,185 @@
+[ContinueMsg]
+msg = "The requester should continue with the request"
+
+[SwitchingProtocolsMsg]
+msg = "The server is switching protocols"
+
+[ProcessingMsg]
+msg = "The request has been accepted, but not yet processed"
+
+[EarlyHintsMsg]
+msg = "Early hints"
+
+[OKMsg]
+msg = "Successful operation"
+
+[CreatedMsg]
+msg = "The operation was completed"
+
+[AcceptedMsg]
+msg = "The task has been created and is being queued for execution"
+
+[NonAuthoritativeInfoMsg]
+msg = "The request was successful, but the information comes from non-authoritative sources"
+
+[NoContentMsg]
+msg = "The operation was successful but there is no content to return"
+
+[ResetContentMsg]
+msg = "The operation was successful, please reset the view"
+
+[PartialContentMsg]
+msg = "Partial content has been returned"
+
+[MultiStatusMsg]
+msg = "Multi-status response"
+
+[AlreadyReportedMsg]
+msg = "The result has already been reported"
+
+[IMUsedMsg]
+msg = "IM used"
+
+[MultipleChoicesMsg]
+msg = "Multiple choices"
+
+[MovedPermanentlyMsg]
+msg = "The resource has been permanently moved"
+
+[FoundMsg]
+msg = "The resource was found"
+
+[SeeOtherMsg]
+msg = "Please see other address"
+
+[NotModifiedMsg]
+msg = "The resource has not been modified"
+
+[UseProxyMsg]
+msg = "Please access the resource through a proxy"
+
+[TemporaryRedirectMsg]
+msg = "Temporary redirect"
+
+[PermanentRedirectMsg]
+msg = "Permanent redirect"
+
+[BadRequestMsg]
+msg = "Bad request"
+
+[UnauthorizedMsg]
+msg = "Unauthorized access"
+
+[PaymentRequiredMsg]
+msg = "Payment required"
+
+[ForbiddenMsg]
+msg = "Forbidden"
+
+[NotFoundMsg]
+msg = "Resource not found"
+
+[MethodNotAllowedMsg]
+msg = "Method not allowed"
+
+[NotAcceptableMsg]
+msg = "Request not acceptable"
+
+[ProxyAuthRequiredMsg]
+msg = "Proxy authentication required"
+
+[RequestTimeoutMsg]
+msg = "Request timeout"
+
+[ConflictMsg]
+msg = "Request conflict"
+
+[GoneMsg]
+msg = "Resource gone"
+
+[LengthRequiredMsg]
+msg = "Length required"
+
+[PreconditionFailedMsg]
+msg = "Precondition failed"
+
+[RequestEntityTooLargeMsg]
+msg = "Request entity too large"
+
+[RequestURITooLongMsg]
+msg = "Request URI too long"
+
+[UnsupportedMediaTypeMsg]
+msg = "Unsupported media type"
+
+[RequestedRangeNotSatisfiableMsg]
+msg = "Requested range not satisfiable"
+
+[ExpectationFailedMsg]
+msg = "Expectation failed"
+
+[TeapotMsg]
+msg = "I'm a teapot"
+
+[MisdirectedRequestMsg]
+msg = "Misdirected request"
+
+[UnprocessableEntityMsg]
+msg = "Unprocessable entity"
+
+[LockedMsg]
+msg = "Resource locked"
+
+[FailedDependencyMsg]
+msg = "Failed dependency"
+
+[TooEarlyMsg]
+msg = "Request too early"
+
+[UpgradeRequiredMsg]
+msg = "Upgrade required"
+
+[PreconditionRequiredMsg]
+msg = "Precondition required"
+
+[TooManyRequestsMsg]
+msg = "Too many requests"
+
+[RequestHeaderFieldsTooLargeMsg]
+msg = "Request header fields too large"
+
+[UnavailableForLegalReasonsMsg]
+msg = "Unavailable for legal reasons"
+
+[InternalServerErrorMsg]
+msg = "Internal server error"
+
+[NotImplementedMsg]
+msg = "Not implemented"
+
+[BadGatewayMsg]
+msg = "Bad gateway"
+
+[ServiceUnavailableMsg]
+msg = "Service unavailable"
+
+[GatewayTimeoutMsg]
+msg = "Gateway timeout"
+
+[HTTPVersionNotSupportedMsg]
+msg = "HTTP version not supported"
+
+[VariantAlsoNegotiatesMsg]
+msg = "Variant also negotiates"
+
+[InsufficientStorageMsg]
+msg = "Insufficient storage"
+
+[LoopDetectedMsg]
+msg = "Loop detected"
+
+[NotExtendedMsg]
+msg = "Not extended"
+
+[NetworkAuthenticationRequiredMsg]
+msg = "Network authentication required"

@@ -1,0 +1,247 @@
+[ContinueMsg]
+status = 100
+code = 100100
+
+[SwitchingProtocolsMsg]
+status = 101
+code = 100101
+
+[ProcessingMsg]
+status = 102
+code = 100102
+
+[EarlyHintsMsg]
+status = 103
+code = 100103
+
+[OKMsg]
+status = 200
+code = 100200
+
+[CreatedMsg]
+status = 201
+code = 100201
+
+[AcceptedMsg]
+status = 202
+code = 100202
+
+[NonAuthoritativeInfoMsg]
+status = 203
+code = 100203
+
+[NoContentMsg]
+status = 204
+code = 100204
+
+[ResetContentMsg]
+status = 205
+code = 100205
+
+[PartialContentMsg]
+status = 206
+code = 100206
+
+[MultiStatusMsg]
+status = 207
+code = 100207
+
+[AlreadyReportedMsg]
+status = 208
+code = 100208
+
+[IMUsedMsg]
+status = 226
+code = 100226
+
+[MultipleChoicesMsg]
+status = 300
+code = 100300
+
+[MovedPermanentlyMsg]
+status = 301
+code = 100301
+
+[FoundMsg]
+status = 302
+code = 100302
+
+[SeeOtherMsg]
+status = 303
+code = 100303
+
+[NotModifiedMsg]
+status = 304
+code = 100304
+
+[UseProxyMsg]
+status = 305
+code = 100305
+
+[TemporaryRedirectMsg]
+status = 307
+code = 100307
+
+[PermanentRedirectMsg]
+status = 308
+code = 100308
+
+[BadRequestMsg]
+status = 400
+code = 100400
+
+[UnauthorizedMsg]
+status = 401
+code = 100401
+
+[PaymentRequiredMsg]
+status = 402
+code = 100402
+
+[ForbiddenMsg]
+status = 403
+code = 100403
+
+[NotFoundMsg]
+status = 404
+code = 100404
+
+[MethodNotAllowedMsg]
+status = 405
+code = 100405
+
+[NotAcceptableMsg]
+status = 406
+code = 100406
+
+[ProxyAuthRequiredMsg]
+status = 407
+code = 100407
+
+[RequestTimeoutMsg]
+status = 408
+code = 100408
+
+[ConflictMsg]
+status = 409
+code = 100409
+
+[GoneMsg]
+status = 410
+code = 100410
+
+[LengthRequiredMsg]
+status = 411
+code = 100411
+
+[PreconditionFailedMsg]
+status = 412
+code = 100412
+
+[RequestEntityTooLargeMsg]
+status = 413
+code = 100413
+
+[RequestURITooLongMsg]
+status = 414
+code = 100414
+
+[UnsupportedMediaTypeMsg]
+status = 415
+code = 100415
+
+[RequestedRangeNotSatisfiableMsg]
+status = 416
+code = 100416
+
+[ExpectationFailedMsg]
+status = 417
+code = 100417
+
+[TeapotMsg]
+status = 418
+code = 100418
+
+[MisdirectedRequestMsg]
+status = 421
+code = 100421
+
+[UnprocessableEntityMsg]
+status = 422
+code = 100422
+
+[LockedMsg]
+status = 423
+code = 100423
+
+[FailedDependencyMsg]
+status = 424
+code = 100424
+
+[TooEarlyMsg]
+status = 425
+code = 100425
+
+[UpgradeRequiredMsg]
+status = 426
+code = 100426
+
+[PreconditionRequiredMsg]
+status = 428
+code = 100428
+
+[TooManyRequestsMsg]
+status = 429
+code = 100429
+
+[RequestHeaderFieldsTooLargeMsg]
+status = 431
+code = 100431
+
+[UnavailableForLegalReasonsMsg]
+status = 451
+code = 100451
+
+[InternalServerErrorMsg]
+status = 500
+code = 100500
+
+[NotImplementedMsg]
+status = 501
+code = 100501
+
+[BadGatewayMsg]
+status = 502
+code = 100502
+
+[ServiceUnavailableMsg]
+status = 503
+code = 100503
+
+[GatewayTimeoutMsg]
+status = 504
+code = 100504
+
+[HTTPVersionNotSupportedMsg]
+status = 505
+code = 100505
+
+[VariantAlsoNegotiatesMsg]
+status = 506
+code = 100506
+
+[InsufficientStorageMsg]
+status = 507
+code = 100507
+
+[LoopDetectedMsg]
+status = 508
+code = 100508
+
+[NotExtendedMsg]
+status = 510
+code = 100510
+
+[NetworkAuthenticationRequiredMsg]
+status = 511
+code = 100511

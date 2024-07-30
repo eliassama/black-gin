@@ -1,0 +1,185 @@
+[ContinueMsg]
+msg = "请求者应继续进行请求"
+
+[SwitchingProtocolsMsg]
+msg = "服务器切换协议"
+
+[ProcessingMsg]
+msg = "请求已被接受，但还未处理"
+
+[EarlyHintsMsg]
+msg = "提前提示"
+
+[OKMsg]
+msg = "操作成功"
+
+[CreatedMsg]
+msg = "操作已完成"
+
+[AcceptedMsg]
+msg = "任务已创建，正在排队执行中"
+
+[NonAuthoritativeInfoMsg]
+msg = "请求已成功，但信息来自非权威信息"
+
+[NoContentMsg]
+msg = "操作已成功但无返回内容"
+
+[ResetContentMsg]
+msg = "操作已成功，请重置视图"
+
+[PartialContentMsg]
+msg = "部分内容已返回"
+
+[MultiStatusMsg]
+msg = "多状态响应"
+
+[AlreadyReportedMsg]
+msg = "已经报告的结果"
+
+[IMUsedMsg]
+msg = "IM已使用"
+
+[MultipleChoicesMsg]
+msg = "多种选择"
+
+[MovedPermanentlyMsg]
+msg = "资源已永久移动"
+
+[FoundMsg]
+msg = "找到资源"
+
+[SeeOtherMsg]
+msg = "请参见其他地址"
+
+[NotModifiedMsg]
+msg = "资源未修改"
+
+[UseProxyMsg]
+msg = "请通过代理访问资源"
+
+[TemporaryRedirectMsg]
+msg = "临时重定向"
+
+[PermanentRedirectMsg]
+msg = "永久重定向"
+
+[BadRequestMsg]
+msg = "错误的请求"
+
+[UnauthorizedMsg]
+msg = "未授权访问"
+
+[PaymentRequiredMsg]
+msg = "需要付款"
+
+[ForbiddenMsg]
+msg = "禁止访问"
+
+[NotFoundMsg]
+msg = "未找到资源"
+
+[MethodNotAllowedMsg]
+msg = "方法不允许"
+
+[NotAcceptableMsg]
+msg = "请求不可接受"
+
+[ProxyAuthRequiredMsg]
+msg = "需要代理身份验证"
+
+[RequestTimeoutMsg]
+msg = "请求超时"
+
+[ConflictMsg]
+msg = "请求冲突"
+
+[GoneMsg]
+msg = "资源已删除"
+
+[LengthRequiredMsg]
+msg = "需要内容长度"
+
+[PreconditionFailedMsg]
+msg = "前提条件失败"
+
+[RequestEntityTooLargeMsg]
+msg = "请求实体过大"
+
+[RequestURITooLongMsg]
+msg = "请求URI过长"
+
+[UnsupportedMediaTypeMsg]
+msg = "不支持的媒体类型"
+
+[RequestedRangeNotSatisfiableMsg]
+msg = "请求范围不满足"
+
+[ExpectationFailedMsg]
+msg = "期望值失败"
+
+[TeapotMsg]
+msg = "我是一个茶壶"
+
+[MisdirectedRequestMsg]
+msg = "错误定向的请求"
+
+[UnprocessableEntityMsg]
+msg = "无法处理的实体"
+
+[LockedMsg]
+msg = "资源被锁定"
+
+[FailedDependencyMsg]
+msg = "依赖关系失败"
+
+[TooEarlyMsg]
+msg = "请求过早"
+
+[UpgradeRequiredMsg]
+msg = "需要升级"
+
+[PreconditionRequiredMsg]
+msg = "需要前提条件"
+
+[TooManyRequestsMsg]
+msg = "请求过多"
+
+[RequestHeaderFieldsTooLargeMsg]
+msg = "请求头字段过大"
+
+[UnavailableForLegalReasonsMsg]
+msg = "因法律原因不可用"
+
+[InternalServerErrorMsg]
+msg = "服务器内部错误"
+
+[NotImplementedMsg]
+msg = "未实现"
+
+[BadGatewayMsg]
+msg = "网关错误"
+
+[ServiceUnavailableMsg]
+msg = "服务不可用"
+
+[GatewayTimeoutMsg]
+msg = "网关超时"
+
+[HTTPVersionNotSupportedMsg]
+msg = "不支持的HTTP版本"
+
+[VariantAlsoNegotiatesMsg]
+msg = "变体也在协商"
+
+[InsufficientStorageMsg]
+msg = "存储不足"
+
+[LoopDetectedMsg]
+msg = "检测到循环"
+
+[NotExtendedMsg]
+msg = "政策不延展"
+
+[NetworkAuthenticationRequiredMsg]
+msg = "需要网络身份验证"
