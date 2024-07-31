@@ -9,6 +9,7 @@ import (
 	"net/http"
 	"os"
 	"os/signal"
+	"strings"
 	"syscall"
 	"time"
 )
@@ -41,7 +42,7 @@ func New(opts *Opts) *Service {
 
 	service := &Service{
 		svr: &http.Server{
-			Addr:    ":8080",
+			Addr:    opts.Listen,
 			Handler: opts.Route,
 		},
 		logger: opts.Logger,
@@ -51,11 +52,28 @@ func New(opts *Opts) *Service {
 }
 
 func (s Service) Start() error {
+	if err := checkPortAvailable(s.svr.Addr); err != nil {
+		s.logger.Error(fmt.Sprintf("port %s is already in use: %s", s.svr.Addr, err))
+		return err
+	}
+
 	go func() {
 		if err := s.svr.ListenAndServe(); err != nil && err != http.ErrServerClosed {
 			s.logger.Error(fmt.Sprintf("server listen err:%s", err))
 		}
 	}()
+
+	addrSlice := strings.Split(s.svr.Addr, ":")
+	port := addrSlice[len(addrSlice)-1]
+
+	localIP, err := getLocalIP()
+	if err != nil {
+		s.logger.Error(fmt.Sprintf("error getting local IP: %s", err))
+	} else {
+		s.logger.Info(fmt.Sprintf("Service Is Running In:\n http://%s:%s \n http://127.0.0.1:%s\n", localIP, port, port))
+	}
+
+	s.logger.Info("Waiting for request...")
 
 	quit := make(chan os.Signal, 1)
 	signal.Notify(quit, syscall.SIGHUP, syscall.SIGINT, syscall.SIGQUIT, syscall.SIGTSTP, syscall.SIGTERM)

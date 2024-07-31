@@ -80,6 +80,14 @@ func (m *Message) SendJsonData(
 	})
 }
 
+func (m *Message) SendRawJsonData(
+	ctx *gin.Context,
+	data any,
+) {
+	m.setStatusCode(ctx)
+	ctx.JSON(m.Status, data)
+}
+
 func (m *Message) SendXml(
 	ctx *gin.Context,
 ) {
