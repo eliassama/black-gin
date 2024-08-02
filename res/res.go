@@ -12,6 +12,7 @@ type Message struct {
 	Message string `json:"message"`
 }
 
+//goland:noinspection ALL
 func GetStatusMessage(status int, msg string) *Message {
 	return &Message{
 		Status:  status,
@@ -19,6 +20,7 @@ func GetStatusMessage(status int, msg string) *Message {
 	}
 }
 
+//goland:noinspection ALL
 func GetStatusTplMessage(status int, msg string, err error) (*Message, error) {
 	message := &Message{
 		Status:  status,
@@ -39,6 +41,7 @@ func GetMessage(status, code int, msg string) *Message {
 	}
 }
 
+//goland:noinspection ALL
 func GetTplMessage(status, code int, msg string, err error) (*Message, error) {
 	message := &Message{
 		Status:  status,

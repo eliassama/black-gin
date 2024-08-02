@@ -6,6 +6,8 @@ import (
 )
 
 // DefaultCors  默认跨域处理
+//
+//goland:noinspection ALL
 func DefaultCors(origin string) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		if origin == "" {
@@ -28,6 +30,8 @@ func DefaultCors(origin string) gin.HandlerFunc {
 }
 
 // AllowOrigin 仅做跨域处理
+//
+//goland:noinspection ALL
 func AllowOrigin(origin string) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		method := c.Request.Method
@@ -46,6 +50,8 @@ func AllowOrigin(origin string) gin.HandlerFunc {
 }
 
 // AllowHeaders 允许的请求头
+//
+//goland:noinspection ALL
 func AllowHeaders(headers map[string]string) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		for key, value := range headers {

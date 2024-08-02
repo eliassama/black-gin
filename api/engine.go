@@ -10,8 +10,10 @@ type Enable = uint8
 const (
 	EnableHealthRoute Enable = iota + 1
 	EnablePageRoute   Enable = iota + 1
+	EnableDefaultCors Enable = iota + 1
 )
 
+//goland:noinspection ALL
 func DefaultRelease(fn func(engine *gin.Engine), enableSlice []Enable) *gin.Engine {
 	gin.SetMode(gin.ReleaseMode)
 	engine := gin.Default()
@@ -19,6 +21,7 @@ func DefaultRelease(fn func(engine *gin.Engine), enableSlice []Enable) *gin.Engi
 	return engine
 }
 
+//goland:noinspection ALL
 func Default(fn func(engine *gin.Engine), enableSlice []Enable) *gin.Engine {
 	gin.SetMode(gin.ReleaseMode)
 	engine := gin.Default()

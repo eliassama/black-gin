@@ -2,6 +2,7 @@ package api
 
 import (
 	"context"
+	"errors"
 	"fmt"
 	"github.com/eliassama/black-gin/middleware"
 	"github.com/gin-gonic/gin"
@@ -25,6 +26,7 @@ type Service struct {
 	logger *zap.Logger
 }
 
+//goland:noinspection ALL
 func New(opts *Opts) *Service {
 	if opts.Route == nil {
 		panic("Route Not Found")
@@ -58,7 +60,7 @@ func (s Service) Start() error {
 	}
 
 	go func() {
-		if err := s.svr.ListenAndServe(); err != nil && err != http.ErrServerClosed {
+		if err := s.svr.ListenAndServe(); err != nil && !errors.Is(err, http.ErrServerClosed) {
 			s.logger.Error(fmt.Sprintf("server listen err:%s", err))
 		}
 	}()
@@ -70,6 +72,7 @@ func (s Service) Start() error {
 	if err != nil {
 		s.logger.Error(fmt.Sprintf("error getting local IP: %s", err))
 	} else {
+		//goland:noinspection ALL
 		s.logger.Info(fmt.Sprintf("Service Is Running In:\n http://%s:%s \n http://127.0.0.1:%s\n", localIP, port, port))
 	}
 
